@@ -1,0 +1,22 @@
+BraTS 2020 Training Dataset
+==========================
+
+Download Link:
+https://www.kaggle.com/datasets/awsaf49/brats2020-training-data?select=BraTS2020_training_data
+
+Dataset Information:
+- Source: Kaggle
+- Size: ~65 GB
+- Format: HDF5 (.h5 files)
+- Training Samples: 14,299 slices
+- Patients: 369
+- MRI Modalities: T1, T1c (contrast), T2, FLAIR
+
+Setup Instructions:
+1. Download the dataset from the link above
+2. Extract the BraTS2020_training_data folder
+3. Place it in the project root directory
+4. Run the model.ipynb notebook
+
+Note: The dataset is not included in this repository due to size constraints.
+Please download it separately from Kaggle.

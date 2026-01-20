@@ -3,19 +3,13 @@
 *.pkl
 *.pth
 
-# Generated reports and visualizations
-*.png
-*.jpg
-*.jpeg
-*.txt
-medical_report.txt
-confusion_matrices.png
-predictions_heatmap.png
-
 # Dataset (too large for GitHub)
 BraTS2020_training_data/
 data/
 *.csv
+
+# Generated reports (keep local only)
+medical_report.txt
 
 # Python
 __pycache__/
