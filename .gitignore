@@ -1,0 +1,48 @@
+# Model weights
+*.h5
+*.pkl
+*.pth
+
+# Generated reports and visualizations
+*.png
+*.jpg
+*.jpeg
+*.txt
+medical_report.txt
+confusion_matrices.png
+predictions_heatmap.png
+
+# Dataset (too large for GitHub)
+BraTS2020_training_data/
+data/
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Miscellaneous
+.cache/
+*.log
