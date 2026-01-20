@@ -110,11 +110,20 @@ generate_final_report()
 | **Edema** | 92.25% | 99.97% | 90.03% | 0.91 | 0.84 |
 | **Average** | **90.34%** | **99.96%** | **90.75%** | 0.90 | 0.82 |
 
-### Confusion Matrices
+### Model Visualizations
+
+#### 3D Tumor Segmentation Animation
+Beyin MRI'ının kesit kesit (slice-by-slice) üst üste görüntüsü - tümörün 3D yapısını gösterir
+
+![Brain Tumor Animation](tumor_animation.gif)
+
+#### Confusion Matrices (Per-Class)
+Per-sınıf confusion matrixleri - True/False Positives ve Negatives
 
 ![Confusion Matrices](confusion_matrices.png)
 
-### Predictions Comparison
+#### Prediction vs Ground Truth Heatmaps
+6 validation örneğinde Ground Truth ve Model Predictions karşılaştırması
 
 ![Predictions Heatmap](predictions_heatmap.png)
 
