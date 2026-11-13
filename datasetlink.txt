@@ -5,18 +5,16 @@ Download Link:
 https://www.kaggle.com/datasets/awsaf49/brats2020-training-data?select=BraTS2020_training_data
 
 Dataset Information:
-- Source: Kaggle
-- Size: ~65 GB
-- Format: HDF5 (.h5 files)
-- Training Samples: 14,299 slices
-- Patients: 369
-- MRI Modalities: T1, T1c (contrast), T2, FLAIR
+- Source: Kaggle (awsaf49/brats2020-training-data)
+- Format: HDF5 (.h5 slice files named volume_<id>_slice_<idx>.h5)
+- Total Slices: 57,195 slices (369 patient volumes x 155 axial slices)
+- Slice Resolution: 240 x 240 (4 MRI channels: T1, T1c, T2, FLAIR; 3 mask channels: Necrotic, Enhancing, Edema)
 
 Setup Instructions:
-1. Download the dataset from the link above
-2. Extract the BraTS2020_training_data folder
-3. Place it in the project root directory
-4. Run the model.ipynb notebook
+1. Download and extract BraTS2020_training_data from the Kaggle link above.
+2. Place it at BraTS2020_training_data/content/data (or pass --data-dir to src.train / src.evaluate).
+3. Run training with patient-level splits:
+   python -m src.train --data-dir BraTS2020_training_data/content/data
+4. See model.ipynb for the archived v1 notebook run logs.
 
-Note: The dataset is not included in this repository due to size constraints.
-Please download it separately from Kaggle.
+Note: Raw dataset files and trained weights are excluded via .gitignore due to file size.

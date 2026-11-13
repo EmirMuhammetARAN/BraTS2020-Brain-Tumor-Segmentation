@@ -10,6 +10,7 @@ data/
 
 # Generated reports (keep local only)
 medical_report.txt
+evaluation_report.txt
 
 # Python
 __pycache__/
